@@ -3,7 +3,8 @@ import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import "./register.css";
+import "./Register.css";
+import APi from "./Api"
 import {useAuth} from "./AuthContext"
 
 function Register() {
@@ -27,8 +28,9 @@ function Register() {
     if (profilePicture) formData.append('profilePicture', profilePicture); // name must match server
 
     try {
-      const response = await axios.post('http://localhost:3000/auth/register', formData);
+      const response = await axios.post(`${APi}/auth/register`, formData);
       console.log('User Registered Successfully', response.data);
+      navigate('/login');
     } catch (error) {
        
         const resp = error?.response?.data;

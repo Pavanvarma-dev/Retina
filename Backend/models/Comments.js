@@ -26,4 +26,3 @@ Comments.association = (models) =>{
     })
 }
 module.exports = Comments;
-

@@ -5,7 +5,7 @@ const Sequalize = require('sequelize');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const cors = require('cors');
-app.use(cors());
+app.use(cors("https://harmonious-salamander-0804d0.netlify.app"));
 
 
 //importing files

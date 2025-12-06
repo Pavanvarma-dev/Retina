@@ -1,0 +1,9 @@
+Backend/node_modules
+Frontend/Retina/noed_modules
+Frontend/Retina/index.html
+Frontend/Retina/README.md
+
+.env
+
+/build
+/dist
